@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -55,23 +55,31 @@ table {
   padding:0;
   margin:0;
 
-  border: 1px solid red;
+  border: 1px solid lightblue;
 }
 
 html{
   font-size:62.5%; /*makes 1 rem == 10px*/
 }
 body{
+  font-family: 'Roboto Mono', monospace;
   font-size:1.6rem; /*brings back to 16px, but responsive*/
   color: #4F4F4F;
 }
+
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 4rem;
+}
+
 a{
-    /*put in font-family*/
+    font-family: 'Roboto Mono', monospace;
     text-decoration:none;
 }
 span{
     font-weight: bold;
 }
+
 section{
     padding: 4% 0;
 }
@@ -79,26 +87,28 @@ section{
 /*HEADER STYLES*/
 nav{
     padding: 2% 0;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 nav a{
-    display:inline-block;
+    display: inline-block;
     padding: 1% 0;
-    width: 10%;
+    width: 15%;
     border-radius: 10px;
     text-align: center;
     color:white;
 }
 .orange{
-    background: orange;
-    margin-left: 10%;
+    background: #FF764E;
+    margin-left: 12%;
 }
 .blue{
-    background: blue;
-    margin: 0 24%;
+    background: #5ED3EB;
+    margin: 0 12%;
 }
 .yellow{
-    background: yellow;
-    margin-right:10%;
+    background: #FFCD69;
+    margin-right:12%;
 }
 
 /*TITLE STYLES*/
@@ -117,10 +127,59 @@ nav a{
     border-radius: 50%;
 }
 .right{
-    width:55%;
+    width: 55%;
     margin-left: 5%;
 }
 .right div{
     position:absolute;
-    top: 40%;
+    top: 25%;
+}
+.right p{
+    margin-top: 2%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PARAGRAPH STYLES */
+.paras{
+    background-color:lightcoral;
+    color: white;
+    margin: 5%;
+    text-align: center;
+}
+.paras p{
+    margin: 1% 10% 1% 10%;
+}
+
+/* ICON SECTION STYLES */
+.icons{
+    margin: 5%;
+    text-align: center;
+}
+.icons img{
+    max-width: 10%;
+}
+.icons p{
+    font-size: 1rem;
+    max-width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height:1.2;
+}
+
+/* PANORAMA STYLES */
+.panorama {
+    background-image: url("assets/footer_img.jpg");
+    margin-top:0;
+    margin-bottom:0;
+    min-height: 200px;
+    background-size: cover;
+    background-position:top; /* Center the image */
+    background-repeat: no-repeat;
+}
+
+/* FOOTER STYLES */
+footer{
+    background-color: rgb(211, 204, 182);
 }
